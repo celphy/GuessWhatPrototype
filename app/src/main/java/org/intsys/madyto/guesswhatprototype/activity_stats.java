@@ -9,5 +9,6 @@ public class activity_stats extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats);
+        // Das ist ein Test
     }
 }
