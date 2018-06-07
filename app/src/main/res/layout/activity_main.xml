@@ -31,7 +31,34 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/wtText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Waiting for" />
+
+            <TextView
+                android:id="@+id/wtPl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Marls" />
+
+            <TextView
+                android:id="@+id/wtPl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Andy" />
+        </LinearLayout>
     </ScrollView>
 
     <ScrollView
@@ -44,17 +71,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/wtText"
+            <TextView
+                android:id="@+id/lgText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Waiting for" />
+                android:text="Last games" />
 
-            <EditText
-                android:id="@+id/wtPl1"
+            <TextView
+                android:id="@+id/lgPl1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -62,8 +89,8 @@
                 android:inputType="textPersonName"
                 android:text="Marls" />
 
-            <EditText
-                android:id="@+id/wtPl2"
+            <TextView
+                android:id="@+id/lgPl2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -74,7 +101,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <EditText
+    <TextView
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
