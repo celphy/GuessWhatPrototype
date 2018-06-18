@@ -8,24 +8,19 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Intent gotoSettingsIntent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Button newGameButton = (Button)findViewById(R.id.btnNewGame);
-        gotoSettingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
-
-        newGameButton.setOnClickListener(new View.OnClickListener(){
-
+        newGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.this.startActivity(gotoSettingsIntent);
+                Intent goToCurrentGameIntent = new Intent( MainActivity.this, CurrentgameActivity.class);
+                MainActivity.this.startActivity(goToCurrentGameIntent);
             }
         });
-
 
     }
 }
