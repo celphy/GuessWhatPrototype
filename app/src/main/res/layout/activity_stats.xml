@@ -7,15 +7,24 @@
     tools:context=".StatsActivity">
 
     <ImageView
-        android:id="@+id/iv_bg_stats"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg_stats" />
+        app:srcCompat="@drawable/bg_stats"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btnReturnMain"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:text="Button"
+        tools:layout_absoluteX="45dp"
+        tools:layout_absoluteY="60dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+                                />
+
+
 </android.support.constraint.ConstraintLayout>
