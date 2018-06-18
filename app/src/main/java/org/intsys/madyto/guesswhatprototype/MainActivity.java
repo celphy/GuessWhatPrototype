@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button newGameButton = (Button)findViewById(R.id.btnNewGame);
-        gotoSettingsIntent = new Intent(MainActivity.this, SeetingsActivity.class);
+        gotoSettingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
 
         newGameButton.setOnClickListener(new View.OnClickListener(){
 
