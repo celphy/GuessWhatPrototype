@@ -18,7 +18,20 @@
         </activity>
         <activity android:name=".SettingsActivity" />
         <activity android:name=".HighscoreActivity" />
-        <activity android:name=".CurrentgameActivity"></activity>
+        <activity android:name=".CurrentgameActivity" />
+        <activity
+            android:name=".InGameActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_in_game"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".InGameSelectedActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_in_game_selected"
+            android:theme="@style/FullscreenTheme"
+            ></activity>
     </application>
 
 </manifest>
