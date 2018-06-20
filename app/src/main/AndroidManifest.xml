@@ -20,18 +20,17 @@
         <activity android:name=".HighscoreActivity" />
         <activity android:name=".CurrentgameActivity" />
         <activity
-            android:name=".InGameActivity"
-            android:screenOrientation="landscape"
+            android:name=".IngameActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_in_game"
+            android:label="@string/title_activity_ingame"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".InGameSelectedActivity"
+            android:name=".IngameSelectedActivity"
             android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_in_game_selected"
-            android:theme="@style/FullscreenTheme"
-            ></activity>
+            android:label="@string/title_activity_ingame_selected"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>

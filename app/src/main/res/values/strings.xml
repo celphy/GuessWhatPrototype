@@ -6,4 +6,8 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_in_game_selected">InGameSelectedActivity</string>
+
+    <string name="title_activity_ingame">IngameActivity</string>
+
+    <string name="title_activity_ingame_selected">IngameSelectedActivity</string>
 </resources>
