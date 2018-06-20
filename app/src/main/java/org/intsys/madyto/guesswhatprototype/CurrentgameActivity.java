@@ -17,8 +17,7 @@ public class CurrentgameActivity extends AppCompatActivity {
         rtnMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToMainIntent = new Intent( CurrentgameActivity.this, MainActivity.class);
-                CurrentgameActivity.this.startActivity(goToMainIntent);
+                finish();
             }
         });
 
@@ -42,4 +41,5 @@ public class CurrentgameActivity extends AppCompatActivity {
         });
 
     }
+
 }

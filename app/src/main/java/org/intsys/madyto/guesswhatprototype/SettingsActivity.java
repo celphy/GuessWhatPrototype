@@ -17,8 +17,7 @@ public class SettingsActivity extends AppCompatActivity {
         rtnMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToMainIntent = new Intent( SettingsActivity.this, MainActivity.class);
-                SettingsActivity.this.startActivity(goToMainIntent);
+                finish();
             }
         });
 

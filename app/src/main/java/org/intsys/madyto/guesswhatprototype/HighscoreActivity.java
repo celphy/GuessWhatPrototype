@@ -18,8 +18,7 @@ public class HighscoreActivity extends AppCompatActivity {
         rtnMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToMainIntent = new Intent(HighscoreActivity.this, MainActivity.class);
-                HighscoreActivity.this.startActivity(goToMainIntent);
+                finish();
             }
         });
 
