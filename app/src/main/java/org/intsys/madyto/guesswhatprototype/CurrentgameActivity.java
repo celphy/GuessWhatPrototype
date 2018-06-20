@@ -40,6 +40,17 @@ public class CurrentgameActivity extends AppCompatActivity {
             }
         });
 
+        Button playCurrentGameButton = (Button) findViewById(R.id.btnCurrentGamePlay);
+        playCurrentGameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToIngameIntent = new Intent(
+                        CurrentgameActivity.this,
+                        IngameActivity.class);
+                CurrentgameActivity.this.startActivity(goToIngameIntent);
+            }
+        });
+
     }
 
 }

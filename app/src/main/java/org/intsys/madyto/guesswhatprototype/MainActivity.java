@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
         newGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToCurrentGameIntent = new Intent( MainActivity.this, IngameActivity.class);
-                MainActivity.this.startActivity(goToCurrentGameIntent);
+                Intent gotoCurrentGameIntent = new Intent(
+                        MainActivity.this,
+                        CurrentgameActivity.class);
+                MainActivity.this.startActivity(gotoCurrentGameIntent);
             }
         });
 

@@ -52,4 +52,15 @@
         app:layout_constraintStart_toEndOf="@+id/btnReturnMain"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnCurrentGamePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="580dp"
+        android:background="@android:color/transparent"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/ivCurrentGame"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
