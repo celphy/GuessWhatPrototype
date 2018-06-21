@@ -17,7 +17,7 @@ public class CurrentgameActivity extends AppCompatActivity {
         rtnMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                onBackPressed();
             }
         });
 
@@ -53,4 +53,12 @@ public class CurrentgameActivity extends AppCompatActivity {
 
     }
 
+
+    @Override
+    public void onBackPressed(){
+        Intent goToMainActivityItent = new Intent(
+                CurrentgameActivity.this,
+                MainActivity.class);
+        CurrentgameActivity.this.startActivity(goToMainActivityItent);
+    }
 }
