@@ -10,7 +10,7 @@
         android:id="@+id/ivCurrentGame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="matrix"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/bg_currentgame"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="2dp" />
