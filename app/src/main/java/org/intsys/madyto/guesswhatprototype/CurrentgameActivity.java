@@ -1,12 +1,15 @@
 package org.intsys.madyto.guesswhatprototype;
 
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class CurrentgameActivity extends AppCompatActivity {
+
+    static final int REQUEST_IMAGE_CAPTURE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,15 +47,25 @@ public class CurrentgameActivity extends AppCompatActivity {
         playCurrentGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToIngameIntent = new Intent(
-                        CurrentgameActivity.this,
-                        IngameActivity.class);
-                CurrentgameActivity.this.startActivity(goToIngameIntent);
+                Intent takePictureIntent = new Intent(
+                    MediaStore.ACTION_IMAGE_CAPTURE
+                );
+
+                if(takePictureIntent.resolveActivity(getPackageManager()) != null) {
+                    CurrentgameActivity.this.startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                }
             }
         });
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        Intent goToIngameIntent = new Intent(
+                CurrentgameActivity.this,
+                IngameActivity.class);
+        CurrentgameActivity.this.startActivity(goToIngameIntent);
+    }
 
     @Override
     public void onBackPressed(){
