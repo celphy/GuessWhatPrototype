@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentgameActivity">
+
+    <ImageView
+        android:id="@+id/ivCurrentGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg_currentgame_after"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <Button
+        android:id="@+id/btnReturnMain"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+
+        android:background="@android:color/transparent"
+        android:text="rtMain"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHighscore"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/transparent"
+        android:text="highscore"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/btnReturnMain"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/transparent"
+        android:text="Settings"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/btnReturnMain"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCurrentGamePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="580dp"
+        android:background="@android:color/transparent"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/ivCurrentGame"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
