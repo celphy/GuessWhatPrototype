@@ -63,4 +63,16 @@
         app:layout_constraintStart_toStartOf="@+id/ivCurrentGame"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnStartChat"
+        android:layout_width="79dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="72dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Button"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnHighscore" />
+
 </android.support.constraint.ConstraintLayout>

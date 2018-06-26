@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.intsys.madyto.guesswhatprototype">
 
-    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -11,22 +13,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-                  android:screenOrientation="portrait">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".HighscoreActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".CurrentgameActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".CurrentgameActivityAfter"
-                  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HighscoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrentgameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrentgameActivityAfter"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".IngameActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -35,10 +42,12 @@
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".IngameSelectedActivity"
-            android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ingame_selected"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".ChatActivity"
+                  android:screenOrientation="portrait" ></activity>
     </application>
 
 </manifest>

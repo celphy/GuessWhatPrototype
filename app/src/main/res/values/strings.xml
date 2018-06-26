@@ -10,4 +10,6 @@
     <string name="title_activity_ingame">IngameActivity</string>
 
     <string name="title_activity_ingame_selected">IngameSelectedActivity</string>
+
+    <string name="title_activity_chat">ChatActivity</string>
 </resources>
