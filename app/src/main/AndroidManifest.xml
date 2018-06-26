@@ -25,6 +25,8 @@
                   android:screenOrientation="portrait"/>
         <activity android:name=".CurrentgameActivity"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".CurrentgameActivityAfter"
+                  android:screenOrientation="portrait"/>
         <activity
             android:name=".IngameActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

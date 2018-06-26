@@ -29,7 +29,7 @@ public class IngameSelectedActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gotoCurrentGameIntent = new Intent(
                         IngameSelectedActivity.this,
-                        CurrentgameActivity.class);
+                        CurrentgameActivityAfter.class);
                 IngameSelectedActivity.this.startActivity(gotoCurrentGameIntent);
             }
         });
