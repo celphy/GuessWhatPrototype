@@ -70,10 +70,10 @@ public class CurrentgameActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        Intent goToIngameIntent = new Intent(
+        Intent goToIngameAfterIntent = new Intent(
                 CurrentgameActivity.this,
                 IngameActivity.class);
-        CurrentgameActivity.this.startActivity(goToIngameIntent);
+        CurrentgameActivity.this.startActivity(goToIngameAfterIntent);
     }
 
     @Override

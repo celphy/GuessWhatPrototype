@@ -11,7 +11,7 @@ public class CurrentgameActivityAfter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_currentgame);
+        setContentView(R.layout.activity_currentgame_after);
 
         Button rtnMainBtn = (Button) findViewById(R.id.btnReturnMain);
         rtnMainBtn.setOnClickListener(new View.OnClickListener() {
