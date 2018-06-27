@@ -51,15 +51,6 @@ public class CurrentgameActivityAfter extends AppCompatActivity {
             }
         });
 
-        Button chatBtn = (Button) findViewById(R.id.btnStartChat);
-        chatBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goToChatIntent = new Intent(CurrentgameActivityAfter.this, ChatActivity.class);
-                CurrentgameActivityAfter.this.startActivity(goToChatIntent);
-            }
-        });
-
     }
 
 
