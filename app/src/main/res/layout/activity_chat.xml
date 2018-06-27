@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="336dp"
         android:layout_marginTop="136dp"
-        android:
         android:background="@android:color/holo_red_light"
         android:textColor="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
